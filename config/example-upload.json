@@ -1,0 +1,30 @@
+{
+  "id": "my-custom-app",
+  "name": "My Custom App",
+  "slug": "my-custom-app",
+  "version": "1.0.0",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": false,
+    "exportCsv": true,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "production",
+    "region": "us-east-1",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.example.com/my-custom-app",
+    "cacheTtlSeconds": 60
+  },
+  "theme": {
+    "primaryColor": "#e11d48",
+    "accentColor": "#f59e0b",
+    "layout": "sidebar",
+    "fontFamily": "Inter, sans-serif",
+    "logoText": "MyApp"
+  }
+}

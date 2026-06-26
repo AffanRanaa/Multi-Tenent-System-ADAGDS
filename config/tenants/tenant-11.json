@@ -1,0 +1,30 @@
+{
+  "id": "tenant-11",
+  "name": "Forge DevOps",
+  "slug": "forge-devops",
+  "version": "2.5.1",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": false,
+    "exportCsv": true,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "production",
+    "region": "us-west-2",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/forge",
+    "cacheTtlSeconds": 20
+  },
+  "theme": {
+    "primaryColor": "#b45309",
+    "accentColor": "#78716c",
+    "layout": "grid",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Forge"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "tenant-05",
+  "name": "Vertex Tasks",
+  "slug": "vertex-tasks",
+  "version": "3.1.0",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": true,
+    "exportCsv": true,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "production",
+    "region": "us-east-1",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/vertex",
+    "cacheTtlSeconds": 45
+  },
+  "theme": {
+    "primaryColor": "#7c3aed",
+    "accentColor": "#a855f7",
+    "layout": "sidebar",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Vertex"
+  }
+}

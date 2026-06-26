@@ -1,0 +1,30 @@
+{
+  "id": "tenant-12",
+  "name": "Tidal Media",
+  "slug": "tidal-media",
+  "version": "1.0.0",
+  "features": {
+    "auth": false,
+    "darkMode": true,
+    "analytics": true,
+    "exportCsv": false,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "staging",
+    "region": "ap-south-1",
+    "logLevel": "debug"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/tidal",
+    "cacheTtlSeconds": 75
+  },
+  "theme": {
+    "primaryColor": "#0369a1",
+    "accentColor": "#22d3ee",
+    "layout": "topnav",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Tidal"
+  }
+}

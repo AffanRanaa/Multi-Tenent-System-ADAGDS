@@ -1,0 +1,30 @@
+{
+  "id": "tenant-02",
+  "name": "Nimbus CRM",
+  "slug": "nimbus-crm",
+  "version": "1.2.0",
+  "features": {
+    "auth": true,
+    "darkMode": false,
+    "analytics": true,
+    "exportCsv": true,
+    "notifications": false
+  },
+  "environment": {
+    "stage": "staging",
+    "region": "eu-west-1",
+    "logLevel": "debug"
+  },
+  "dataSource": {
+    "type": "graphql",
+    "endpoint": "https://api.adagds.local/nimbus/graphql",
+    "cacheTtlSeconds": 30
+  },
+  "theme": {
+    "primaryColor": "#059669",
+    "accentColor": "#14b8a6",
+    "layout": "topnav",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Nimbus"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "tenant-06",
+  "name": "Coral Booking",
+  "slug": "coral-booking",
+  "version": "1.4.2",
+  "features": {
+    "auth": true,
+    "darkMode": false,
+    "analytics": false,
+    "exportCsv": false,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "staging",
+    "region": "eu-central-1",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/coral",
+    "cacheTtlSeconds": 90
+  },
+  "theme": {
+    "primaryColor": "#db2777",
+    "accentColor": "#ec4899",
+    "layout": "topnav",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Coral"
+  }
+}

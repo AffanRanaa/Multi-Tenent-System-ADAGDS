@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADAGDS — Control Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">ADAGDS</span>
+      <span class="brand-sub">Adaptive Distributed Application Generation &amp; Deployment System</span>
+    </div>
+    <div class="topbar-right">
+      <span id="phase" class="phase">idle</span>
+      <label class="count-field" title="How many apps to generate — leave blank for auto">
+        Apps
+        <input id="app-count" type="number" min="1" max="20" placeholder="auto" />
+      </label>
+      <button id="btn-upload" class="btn btn-ghost">Upload Config</button>
+      <input id="file-input" type="file" accept="application/json,.json" hidden />
+      <button id="btn-upload-data" class="btn btn-ghost">Upload Data</button>
+      <input id="file-data-input" type="file" accept="application/json,.json" hidden />
+      <button id="btn-refresh" class="btn btn-ghost">Refresh Resources</button>
+      <button id="btn-start" class="btn btn-primary">Start Generation</button>
+    </div>
+  </header>
+
+  <div id="dataset-banner" class="dataset-banner" hidden></div>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Resource Analysis</h2>
+      <div id="resources" class="kv"></div>
+    </section>
+
+    <section class="card">
+      <h2>Adaptive Decision</h2>
+      <div id="decision"></div>
+    </section>
+
+    <section class="card">
+      <h2>Build Progress <span id="progress-count" class="muted"></span></h2>
+      <div class="progress"><div id="progress-fill"></div></div>
+      <div id="jobs" class="joblist"></div>
+    </section>
+
+    <section class="card">
+      <h2>Worker Nodes <span id="worker-count" class="muted"></span></h2>
+      <div id="workers" class="workerlist"></div>
+    </section>
+
+    <section class="card">
+      <h2>Deployed Applications</h2>
+      <div id="deployments" class="deploylist"></div>
+    </section>
+
+    <section class="card">
+      <h2>Fault Events</h2>
+      <div id="faults" class="faultlist"></div>
+    </section>
+
+    <section class="card card-wide">
+      <h2>Live System Log</h2>
+      <div id="log" class="log"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <div id="conn" class="conn conn-down">connecting…</div>
+  <script src="app.js"></script>
+</body>
+</html>

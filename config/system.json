@@ -1,0 +1,21 @@
+{
+  "appCount": "auto",
+  "forceLowResources": false,
+  "simulatedLowResources": {
+    "cpuCores": 2,
+    "cpuLoadPct": 93,
+    "freeMemGB": 0.9
+  },
+  "paths": {
+    "output": "output",
+    "logs": "logs",
+    "tenants": "config/tenants"
+  },
+  "worker": {
+    "count": "auto"
+  },
+  "deployment": {
+    "autoLaunchCount": "all",
+    "runNpmInstall": true
+  }
+}

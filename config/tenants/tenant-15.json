@@ -1,0 +1,30 @@
+{
+  "id": "tenant-15",
+  "name": "Cobalt Travel",
+  "slug": "cobalt-travel",
+  "version": "1.6.0",
+  "features": {
+    "auth": true,
+    "darkMode": false,
+    "analytics": false,
+    "exportCsv": true,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "staging",
+    "region": "eu-central-1",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "graphql",
+    "endpoint": "https://api.adagds.local/cobalt/graphql",
+    "cacheTtlSeconds": 100
+  },
+  "theme": {
+    "primaryColor": "#1d4ed8",
+    "accentColor": "#6366f1",
+    "layout": "topnav",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Cobalt"
+  }
+}

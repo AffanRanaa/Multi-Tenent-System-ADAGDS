@@ -1,0 +1,30 @@
+{
+  "id": "tenant-09",
+  "name": "Onyx Finance",
+  "slug": "onyx-finance",
+  "version": "4.0.0",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": true,
+    "exportCsv": true,
+    "notifications": false
+  },
+  "environment": {
+    "stage": "production",
+    "region": "us-east-2",
+    "logLevel": "error"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/onyx",
+    "cacheTtlSeconds": 15
+  },
+  "theme": {
+    "primaryColor": "#18181b",
+    "accentColor": "#52525b",
+    "layout": "sidebar",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Onyx"
+  }
+}

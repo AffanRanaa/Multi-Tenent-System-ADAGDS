@@ -1,0 +1,30 @@
+{
+  "id": "tenant-08",
+  "name": "Pulse Monitor",
+  "slug": "pulse-monitor",
+  "version": "2.3.0",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": true,
+    "exportCsv": false,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "production",
+    "region": "ap-southeast-2",
+    "logLevel": "warn"
+  },
+  "dataSource": {
+    "type": "websocket",
+    "endpoint": "wss://api.adagds.local/pulse",
+    "cacheTtlSeconds": 5
+  },
+  "theme": {
+    "primaryColor": "#65a30d",
+    "accentColor": "#84cc16",
+    "layout": "grid",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Pulse"
+  }
+}

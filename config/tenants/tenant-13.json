@@ -1,0 +1,30 @@
+{
+  "id": "tenant-13",
+  "name": "Ember Support",
+  "slug": "ember-support",
+  "version": "1.3.4",
+  "features": {
+    "auth": true,
+    "darkMode": false,
+    "analytics": true,
+    "exportCsv": true,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "production",
+    "region": "eu-west-1",
+    "logLevel": "warn"
+  },
+  "dataSource": {
+    "type": "mock",
+    "endpoint": "local://ember/fixtures",
+    "cacheTtlSeconds": 0
+  },
+  "theme": {
+    "primaryColor": "#ea580c",
+    "accentColor": "#ef4444",
+    "layout": "sidebar",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Ember"
+  }
+}

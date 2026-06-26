@@ -1,0 +1,30 @@
+{
+  "id": "tenant-01",
+  "name": "Aurora Analytics",
+  "slug": "aurora-analytics",
+  "version": "1.0.0",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": true,
+    "exportCsv": false,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "production",
+    "region": "us-east-1",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/aurora",
+    "cacheTtlSeconds": 60
+  },
+  "theme": {
+    "primaryColor": "#4f46e5",
+    "accentColor": "#06b6d4",
+    "layout": "sidebar",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Aurora"
+  }
+}

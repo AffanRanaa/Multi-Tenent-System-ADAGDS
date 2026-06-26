@@ -1,0 +1,30 @@
+{
+  "id": "tenant-10",
+  "name": "Lumen Learning",
+  "slug": "lumen-learning",
+  "version": "1.1.0",
+  "features": {
+    "auth": true,
+    "darkMode": false,
+    "analytics": true,
+    "exportCsv": false,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "staging",
+    "region": "eu-west-2",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "graphql",
+    "endpoint": "https://api.adagds.local/lumen/graphql",
+    "cacheTtlSeconds": 60
+  },
+  "theme": {
+    "primaryColor": "#0284c7",
+    "accentColor": "#38bdf8",
+    "layout": "topnav",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Lumen"
+  }
+}

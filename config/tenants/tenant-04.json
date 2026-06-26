@@ -1,0 +1,30 @@
+{
+  "id": "tenant-04",
+  "name": "Helios Dashboard",
+  "slug": "helios-dashboard",
+  "version": "1.0.3",
+  "features": {
+    "auth": false,
+    "darkMode": true,
+    "analytics": true,
+    "exportCsv": false,
+    "notifications": false
+  },
+  "environment": {
+    "stage": "development",
+    "region": "ap-south-1",
+    "logLevel": "debug"
+  },
+  "dataSource": {
+    "type": "mock",
+    "endpoint": "local://helios/fixtures",
+    "cacheTtlSeconds": 0
+  },
+  "theme": {
+    "primaryColor": "#dc2626",
+    "accentColor": "#f43f5e",
+    "layout": "minimal",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Helios"
+  }
+}

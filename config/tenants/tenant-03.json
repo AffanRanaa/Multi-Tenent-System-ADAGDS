@@ -1,0 +1,30 @@
+{
+  "id": "tenant-03",
+  "name": "Quartz Commerce",
+  "slug": "quartz-commerce",
+  "version": "2.0.1",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": false,
+    "exportCsv": true,
+    "notifications": true
+  },
+  "environment": {
+    "stage": "production",
+    "region": "us-west-2",
+    "logLevel": "warn"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/quartz",
+    "cacheTtlSeconds": 120
+  },
+  "theme": {
+    "primaryColor": "#d97706",
+    "accentColor": "#f59e0b",
+    "layout": "grid",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Quartz"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "adagds",
+  "version": "1.0.0",
+  "description": "Adaptive Distributed Application Generation & Deployment System (ADAGDS)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:worker": "node src/worker/worker.js",
+    "test": "node --test --test-concurrency=1 \"tests/**/*.test.js\""
+  },
+  "keywords": [
+    "distributed",
+    "parallel",
+    "code-generation",
+    "multi-tenant"
+  ],
+  "author": "rafay9696@gmail.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^2.0.6",
+    "systeminformation": "^5.23.5",
+    "ws": "^8.18.0"
+  }
+}

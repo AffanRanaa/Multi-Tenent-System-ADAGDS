@@ -1,0 +1,30 @@
+{
+  "id": "tenant-14",
+  "name": "Mint Health",
+  "slug": "mint-health",
+  "version": "2.0.0",
+  "features": {
+    "auth": true,
+    "darkMode": true,
+    "analytics": true,
+    "exportCsv": false,
+    "notifications": false
+  },
+  "environment": {
+    "stage": "production",
+    "region": "us-east-1",
+    "logLevel": "info"
+  },
+  "dataSource": {
+    "type": "rest",
+    "endpoint": "https://api.adagds.local/mint",
+    "cacheTtlSeconds": 50
+  },
+  "theme": {
+    "primaryColor": "#16a34a",
+    "accentColor": "#34d399",
+    "layout": "grid",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "logoText": "Mint"
+  }
+}
